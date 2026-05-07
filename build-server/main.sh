@@ -1,4 +1,7 @@
 #!/bin/bash
-export GIT_REPOSITORY_URL="$GIT_REPOSITORY_URL"
+
+echo "Starting build process..."
+
 git clone "$GIT_REPOSITORY_URL" /home/app/output
-node /home/app/script.js 
+
+node /home/app/script.js
